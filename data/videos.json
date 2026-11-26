@@ -4,6 +4,7 @@
     "tieuDe": "Top 5 điện thoại dưới 10 triệu, hạng 1 bất ngờ! #shorts",
     "link": "https://www.youtube.com/shorts/7_CiWx0J9KQ",
     "laShort": true,
+    "chuDe": "top",
     "ngayDang": "2026-11-26T15:50:07+00:00",
     "anh": "https://i.ytimg.com/vi/7_CiWx0J9KQ/hqdefault.jpg"
   },
@@ -12,22 +13,25 @@
     "tieuDe": "Top 5 điện thoại dưới 10 triệu đáng mua nhất cuối năm 2026 (giá 4 cửa hàng)",
     "link": "https://www.youtube.com/watch?v=L9sat-GfVZ8",
     "laShort": false,
+    "chuDe": "top",
     "ngayDang": "2026-11-26T15:49:53+00:00",
-    "anh": "https://i.ytimg.com/vi/L9sat-GfVZ8/hqdefault.jpg"
+    "anh": "https://i.ytimg.com/vi/L9sat-GfVZ8/mqdefault.jpg"
   },
   {
     "id": "irr2xn2MpFU",
     "tieuDe": "Redmi Note 15 Pro 5G vs Galaxy A57: So sánh chi tiết 7 hiệp + giá rẻ nhất 4 cửa hàng",
     "link": "https://www.youtube.com/watch?v=irr2xn2MpFU",
     "laShort": false,
+    "chuDe": "so-sanh",
     "ngayDang": "2026-11-26T07:32:11+00:00",
-    "anh": "https://i.ytimg.com/vi/irr2xn2MpFU/hqdefault.jpg"
+    "anh": "https://i.ytimg.com/vi/irr2xn2MpFU/mqdefault.jpg"
   },
   {
     "id": "k907k6S2ypw",
     "tieuDe": "8,88 triệu hay 10,69 triệu? Redmi Note 15 Pro vs Galaxy A57 #shorts",
     "link": "https://www.youtube.com/shorts/k907k6S2ypw",
     "laShort": true,
+    "chuDe": "so-sanh",
     "ngayDang": "2026-11-26T07:32:05+00:00",
     "anh": "https://i.ytimg.com/vi/k907k6S2ypw/hqdefault.jpg"
   },
@@ -36,6 +40,7 @@
     "tieuDe": "Dasai Mochi Mini",
     "link": "https://www.youtube.com/shorts/8uxruzC-G0M",
     "laShort": true,
+    "chuDe": "gear",
     "ngayDang": "2025-08-15T09:00:22+00:00",
     "anh": "https://i.ytimg.com/vi/8uxruzC-G0M/hqdefault.jpg"
   }
