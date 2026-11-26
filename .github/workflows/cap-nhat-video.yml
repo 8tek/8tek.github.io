@@ -1,0 +1,59 @@
+# Tự cập nhật mục "Video mới trên kênh" mỗi giờ từ RSS YouTube rồi xuất bản trang lên GitHub Pages.
+# Cũng chạy mỗi khi có commit lên main, và có thể bấm chạy tay ở tab Actions (Run workflow).
+name: Cap nhat video va xuat ban
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Lay video moi tu YouTube
+        run: node scripts/cap-nhat-video.mjs
+
+      - name: Luu thay doi vao repo (de ban sao luu tren may cung co)
+        run: |
+          if [ -n "$(git status --porcelain index.html data)" ]; then
+            git config user.name "8tek-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.html data
+            git commit -m "Tu cap nhat video moi tu YouTube"
+            git push
+          else
+            echo "Khong co video moi"
+          fi
+
+      - name: Chuan bi thu muc trang
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude 'scripts' --exclude '_site' --exclude 'SAO-LUU-VA-CHUYEN-HOST.md' ./ _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
