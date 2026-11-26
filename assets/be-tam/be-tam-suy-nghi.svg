@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+  <!-- bóng -->
+  <ellipse cx="200" cy="500" rx="110" ry="14" fill="#000" opacity=".18"/>
+  <!-- chân que -->
+  <path d="M165 420 l-18 70 h-22" stroke="#0d1320" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M235 420 l18 70 h22" stroke="#0d1320" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- bong bóng chat nhỏ trên đầu (ăng-ten) -->
+  <g transform="rotate(10 300 70)">
+    <rect x="262" y="40" width="80" height="56" rx="20" fill="#2ee6d6" stroke="#0d1320" stroke-width="8"/>
+    <path d="M285 92 l-10 24 26 -20" fill="#2ee6d6" stroke="#0d1320" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="285" cy="68" r="6" fill="#0d1320"/><circle cx="302" cy="68" r="6" fill="#0d1320"/><circle cx="319" cy="68" r="6" fill="#0d1320"/>
+  </g>
+  <!-- thân điện thoại -->
+  <rect x="95" y="80" width="210" height="350" rx="48" fill="#c6ff3d" stroke="#0d1320" stroke-width="10"/>
+  <rect x="95" y="80" width="210" height="350" rx="48" fill="none" stroke="#8ee03a" stroke-width="0"/>
+  <path d="M120 400 h160" stroke="#8ee03a" stroke-width="10" stroke-linecap="round"/>
+  <!-- màn hình -->
+  <rect x="112" y="118" width="176" height="232" rx="30" fill="#141d30"/>
+  <rect x="172" y="132" width="56" height="12" rx="6" fill="#0a0f19"/>
+  <!-- số 8 nhỏ ở lưng/cằm -->
+  <text x="200" y="392" text-anchor="middle" font-family="'Be Vietnam Pro','Segoe UI',sans-serif" font-weight="900" font-size="34" fill="#0d1320">8</text>
+  
+    <path d="M155 200 h30" stroke="#2ee6d6" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="228" cy="203" r="14" fill="#2ee6d6"/>
+    <path d="M160 175 l25 6" stroke="#2ee6d6" stroke-width="8" stroke-linecap="round"/>
+    <path d="M178 262 q22 -10 44 2" stroke="#2ee6d6" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M110 300 q-40 20 -45 70" stroke="#0d1320" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M300 330 q40 -10 -40 -40" stroke="#0d1320" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="65" cy="370" r="13" fill="#0d1320"/><circle cx="262" cy="292" r="13" fill="#0d1320"/>
+  
+</svg>
